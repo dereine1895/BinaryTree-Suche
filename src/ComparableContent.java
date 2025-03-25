@@ -1,14 +1,14 @@
 import utils.*;
-public class ComparableContent {
+public class ComparableContent<ContentType> {
     private
 
-    public boolean is (ContentType pContent){
+    public boolean isGreater (ContentType pContent){
 
     }
-    public boolean is (ContentType pContent){
+    public boolean isLess (ContentType pContent){
 
     }
-    public boolean is (ContentType pContent){
+    public boolean isEqual (ContentType pContent){
 
     }
 

@@ -1,5 +1,5 @@
 import utils.*;
-public class Benutzerprofil {
+public class Benutzerprofil <ContentType> {
     private String benutzername;
     private String passwort;
 
@@ -9,13 +9,13 @@ public class Benutzerprofil {
     public String getBenutzername() {
         return benutzername;
     }
-    public boolean is (ContentType pContent){
+    public boolean isGreater (ContentType pContent){
 
     }
-    public boolean is (ContentType pContent){
+    public boolean isLess (ContentType pContent){
 
     }
-    public boolean is (ContentType pContent){
+    public boolean isEqual (ContentType pContent){
 
     }
 
