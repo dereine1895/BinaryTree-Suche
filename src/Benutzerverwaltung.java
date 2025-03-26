@@ -4,8 +4,9 @@ public class Benutzerverwaltung {
 
     private String benutzername;
     private String passwort;
+    private BinarySearchTree<Benutzerprofil> benutzerBaum;
     public Benutzerverwaltung() {
-
+        benutzerBaum = new BinarySearchTree();
     }
 
     public void neuenBenutzerAnlegen(String pBenutzername, String pPw) {

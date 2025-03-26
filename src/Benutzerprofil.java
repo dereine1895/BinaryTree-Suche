@@ -1,5 +1,5 @@
 import utils.*;
-public class Benutzerprofil <ContentType> {
+public class Benutzerprofil implements ComparableContent<Benutzerprofil> {
     private String benutzername;
     private String passwort;
 
@@ -9,14 +9,16 @@ public class Benutzerprofil <ContentType> {
     public String getBenutzername() {
         return benutzername;
     }
-    public boolean isGreater (ContentType pContent){
+    public boolean isGreater (Benutzerprofil pk){
+
+        return pk.getBenutzername().compareTo(benutzername)<0;
 
     }
-    public boolean isLess (ContentType pContent){
-
+    public boolean isLess (Benutzerprofil pk){
+        return pk.getBenutzername().compareTo(benutzername)>0;
     }
-    public boolean isEqual (ContentType pContent){
-
+    public boolean isEqual (Benutzerprofil pk){
+        return pk.getBenutzername().compareTo(benutzername)==0;
     }
 
 
