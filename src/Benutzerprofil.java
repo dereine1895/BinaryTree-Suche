@@ -18,7 +18,7 @@ public class Benutzerprofil implements ComparableContent<Benutzerprofil> {
         return pk.getBenutzername().compareTo(benutzername)>0;
     }
     public boolean isEqual (Benutzerprofil pk){
-        return pk.getBenutzername().compareTo(benutzername)==0;
+        return pk.getBenutzername().equals(benutzername);
     }
 
 
